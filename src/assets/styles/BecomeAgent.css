@@ -1,0 +1,30 @@
+.become-agent {
+    text-align: center;
+    padding: 60px 30px;
+    background: #f8f8f8;
+  }
+  
+  .become-agent h2 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .become-agent p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    background: #f4b400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background: #e0a800;
+  }
+  

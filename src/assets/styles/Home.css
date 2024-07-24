@@ -1,0 +1,186 @@
+/* General styles */
+.home {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/hero.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: -1;
+}
+.text-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Hero Section Headings */
+.hero-section h2,
+.hero-section h1 {
+  color: #ffffff;
+}
+
+/* Base styles */
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 35px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 40%;
+}
+
+.itemSearch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  gap: 10px;
+}
+
+/* Container for select to manage arrow */
+.selectContainer {
+  position: relative;
+  width: 20%;
+}
+
+/* Remove border radius and default styles for select elements */
+.dataSelect {
+  width: 100%;
+  border-radius: 0;
+  -webkit-appearance: none; /* Removes default styles for select */
+  -moz-appearance: none; /* Removes default styles for Firefox */
+  appearance: none; /* Removes default styles for modern browsers */
+  padding: 0.5rem 2.5rem 0.5rem 1rem; /* Adjust padding for custom arrow */
+  font-size: 1rem;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Custom arrow for select element */
+.dataSelect::-ms-expand {
+  display: none; /* Remove default arrow in Internet Explorer */
+}
+
+.selectContainer::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1rem; /* Adjust position of the arrow */
+  transform: translateY(-50%);
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.dataSelect:focus + .selectContainer::after,
+.dataSelect:active + .selectContainer::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Styling for input fields and button */
+.inventoryTextField,
+.searchButton {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 0; /* Remove border radius */
+}
+
+.inventoryTextField {
+  border: 1px solid #ccc; /* Border color */
+  outline: none; /* Remove default outline */
+}
+
+.searchButton {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.searchButton:hover {
+  background-color: #e55b00;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .itemSearch {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dataSelect,
+  .inventoryTextField,
+  .searchButton {
+    width: 100%;
+  }
+
+  .inputField {
+    width: 100%;
+  }
+  .selectContainer{
+    width: 100%;
+  }
+  .searchContainer{
+    width: 90%;
+  }
+  .itemSearch{
+  width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchContainer {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .dataSelect,
+  .inventoryTextField,
+  .searchButton {
+    font-size: 0.9rem;
+    padding: 8px;
+    height: 35px;
+  }
+
+  .searchButton {
+    padding: 8px 16px;
+  }
+}

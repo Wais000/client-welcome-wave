@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+  --blue: #6e77ee;
+  --bgDark: #B7BAC3;
+  --gray: #e4e4e4;
+  --baseGray: #f9faf5;
+}
+
+/* PAGE SPECIFIC STYLES */
+
+
+#about-main .story-container {
+  height: 100%;
+  width: 100%;
+  margin-top: 150px;
+}
+
+@media (max-width: 640px) {
+  #about-main .story-container {
+    margin-top: 80px;
+  }
+}
+
+#about-main .story-container .container-divider {
+  margin-top: 100px;
+}
+
+@media (max-width: 640px) {
+  #about-main .story-container .container-divider {
+    margin-top: 50px;
+  }
+}
+
+#about-main .story-container .need-for-dx-container,
+#about-main .story-container .our-tech-container,
+#about-main .story-container .origin-story-container,
+#about-main .story-container .today-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 815px) {
+  #about-main .story-container .need-for-dx-container,
+  #about-main .story-container .our-tech-container,
+  #about-main .story-container .origin-story-container,
+  #about-main .story-container .today-container {
+    width: 100%;
+  }
+}
+
+#about-main .story-container .img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#about-main .story-container .img-container img {
+  margin: 50px auto;
+}
+
+#about-main .story-container h3 {
+  color: var(--aboutSectionHeadingBlue);
+}
+
+#about-main .story-container p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: var(--textDarkColor);
+}
+
+@media (max-width: 640px) {
+  #about-main .story-container p {
+    font-size: 13px;
+  }
+}
+
+#about-main .story-container ul {
+  margin-top: 30px;
+  list-style-image: url('https://apimatic.io/img/theme/aboutUs/bullet.svg');
+}
+
+#about-main .story-container ul li {
+  line-height: 25px;
+  padding-left: 5px;
+  color: var(--textDarkColor);
+}
+
+/* about us */
+
