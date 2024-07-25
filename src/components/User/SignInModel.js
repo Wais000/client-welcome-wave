@@ -19,12 +19,12 @@ function AuthModal({ isOpen, onClose }) {
     e.preventDefault();
     // Handle sign-up logic here
     console.log("Sign up with:", { name, email, password });
-    setIsRightPanelActive(false); // Move the sign-in form back to the left side
+    setIsRightPanelActive(false); 
   };
 
   const handleSignInSubmit = (e) => {
     e.preventDefault();
-    // Handle sign-in logic here
+
     console.log("Sign in with:", { email, password });
   };
 
@@ -32,7 +32,7 @@ function AuthModal({ isOpen, onClose }) {
     setEmail("");
     setPassword("");
     setName("");
-    setIsRightPanelActive(false); // Reset to default state
+    setIsRightPanelActive(false); 
     onClose();
   };
 
