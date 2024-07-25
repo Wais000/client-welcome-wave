@@ -12,7 +12,7 @@ const Header = () => {
   const location = useLocation();
 
   const toggleMobileNav = () => {
-    setIsMenuOpen(prevState => !prevState); // Toggle state based on previous state
+    setIsMenuOpen(prevState => !prevState); 
   };
 
   const closeMenu = () => {
@@ -21,7 +21,7 @@ const Header = () => {
 
   const openModal = () => {
     setIsModalOpen(true);
-    closeMenu(); // Ensure the menu is closed when opening the modal
+    closeMenu(); 
   };
 
   const closeModal = () => {
@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    // Close the modal when the location changes
+
     closeModal();
   }, [location]);
 
@@ -50,7 +50,8 @@ const Header = () => {
 
         {/* Logo */}
         <Link to="/" className="logo d-flex align-items-center me-auto me-lg-0">
-          <h1 className="sitename">GP</h1>
+        <img src="/src/assets/images/logo copy.svg" alt="" style={{height:"100px", width:"100px"}}/>
+          {/* <h1 className="sitename">GP</h1> */}
           <span>.</span>
         </Link>
 
