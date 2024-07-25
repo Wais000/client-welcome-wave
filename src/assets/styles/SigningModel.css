@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(10px); /* Add blur to the background */
+  backdrop-filter: blur(10px); 
 }
 
 .modal-content {
@@ -41,7 +41,7 @@
   font-size: 24px;
   cursor: pointer;
   color: black;
-  z-index: 10000; /* Ensure the close button is above the blurred background */
+  z-index: 10000; 
 }
 
 h1 {
@@ -95,8 +95,8 @@ button:focus {
 }
 
 form {
-  background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
-  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,8 +115,8 @@ input {
 }
 
 .container {
-  background-color: var(--gray); /* White with transparency */
-  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: var(--gray); 
+  backdrop-filter: blur(10px); 
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
@@ -181,16 +181,6 @@ input {
   transition: transform 0.6s ease-in-out;
   z-index: 100;
 }
-/* .sign-up-container{
- 
-
-
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: transform 0.6s ease-in-out;
-    z-index: 100;
-} */
 
 .overlay {
   background: var(--blue);
@@ -242,7 +232,7 @@ input {
   margin: 20px 0;
 }
 .social-container-sign-up {
-  /* margin: 20px 0; */
+
 
   z-index: 2000;
 }
@@ -300,13 +290,6 @@ input {
   z-index: 1000;
 }
 
-/* .modal-content {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-    backdrop-filter: blur(10px);
-  } */
 
 .close-button {
   position: absolute;

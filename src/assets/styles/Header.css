@@ -1,4 +1,4 @@
-/* Header.css */
+
 :root {
   --blue: #6e77ee;
   --bgDark: #B7BAC3;
@@ -97,7 +97,7 @@ padding-bottom:100px;
   transition: all 0.3s;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -144,19 +144,6 @@ padding-bottom:100px;
   }
 }
 
-/**
- * Template Name: Gp
- * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
- * Updated: Jun 29 2024 with Bootstrap v5.3.3
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -167,18 +154,18 @@ padding-bottom:100px;
 
 /* Global Colors */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website */
-  --default-color: #444444; /* Default color for text content */
-  --heading-color: #151515; /* Color for headings */
-  --accent-color: #ffc451; /* Accent color for buttons, links, etc. */
-  --surface-color: #ffffff; /* Background color of boxed elements */
-  --contrast-color: #312f2f; /* Contrast color for text */
-  --nav-color: rgba(255, 255, 255, 0.905); /* Default color of the navmenu links */
-  --nav-hover-color: #ffc451; /* Color for navmenu links when hovered */
-  --nav-mobile-background-color: #ffffff; /* Background color for mobile navmenu */
-  --nav-dropdown-background-color: #ffffff; /* Background color for dropdown items */
-  --nav-dropdown-color: #212529; /* Color for dropdown navigation links */
-  --nav-dropdown-hover-color: #ffc451; /* Color for dropdown links when hovered */
+  --background-color: #ffffff; 
+  --default-color: #444444; 
+  --heading-color: #151515; 
+  --accent-color: #ffc451; 
+  --surface-color: #ffffff;
+  --contrast-color: #312f2f;
+  --nav-color: rgba(255, 255, 255, 0.905);
+  --nav-hover-color: #ffc451;
+  --nav-mobile-background-color: #ffffff; 
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #212529; 
+  --nav-dropdown-hover-color: #ffc451;
 }
 
 /* Smooth scroll */
@@ -186,9 +173,6 @@ padding-bottom:100px;
   scroll-behavior: smooth;
 }
 
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -258,9 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Global Header
---------------------------------------------------------------*/
+
 .header {
   --background-color: rgba(0, 0, 0, 0.8);
   --heading-color: #ffffff;
@@ -338,10 +320,7 @@ h1, h2, h3, h4, h5, h6 {
   --background-color: rgba(0, 0, 0, 0.8);
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Navmenu - Desktop */
+
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -467,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .navmenu ul {
-    display: none; /* Hidden by default */
+    display: none; 
     position: absolute;
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
@@ -566,11 +545,11 @@ h1, h2, h3, h4, h5, h6 {
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
     transition: 0.3s;
-    display: none; /* Ensure the menu shows when active */
+    display: none;
 
   }
 
   .mobile-nav-active .navmenu > ul {
-    display: block; /* Show the menu when active */
+    display: block;
   }
 }

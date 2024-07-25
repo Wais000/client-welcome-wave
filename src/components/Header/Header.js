@@ -51,11 +51,11 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="logo d-flex align-items-center me-auto me-lg-0">
         <img src="/src/assets/images/logo copy.svg" alt="" style={{height:"100px", width:"100px"}}/>
-          {/* <h1 className="sitename">GP</h1> */}
+        
           <span>.</span>
         </Link>
 
-        {/* Navigation Menu */}
+   
         <nav id="navmenu" className={`navmenu ${isMenuOpen ? 'mobile-nav-active' : ''}`}>
           <ul className="nav-links">
             <li><NavLink to="/institutions" onClick={closeMenu}>Institutions</NavLink></li>
@@ -64,13 +64,13 @@ const Header = () => {
             <li><NavLink to="/donation" onClick={closeMenu}>Donation</NavLink></li>
             <li><NavLink to="/volunteer" onClick={closeMenu}>Become A Volunteer</NavLink></li>
           </ul>
-          {/* Mobile Nav Toggle Button */}
+        
           <i className="mobile-nav-toggle d-xl-none" onClick={toggleMobileNav}>
             {isMenuOpen ? <X /> : <List />}
           </i>
         </nav>
 
-        {/* Get Started Button */}
+     
         <Link className="btn-getstarted" to="#" onClick={openModal}>Sign In</Link>
 
       </div>

@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import rootReducer from './features/reducer/reducers'; // Assuming this is the correct path
-import App from './App'; // Replace with your root component path
+import rootReducer from './features/reducer/reducers'; 
+import App from './App'; 
 
 const store = configureStore({
   reducer: rootReducer,

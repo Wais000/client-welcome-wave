@@ -12,33 +12,21 @@ import Donation from './pages/Donation.js';
 // import Volunteer from './components/Volunteer.js';
 import Footer from './components/Footer/Footer.js';
 
-
-// import JobList from './components/Job/JobList.js';
-
-
-// import other components
-
 const App = () => (
   <> 
 
   <Router>
     <Header />
-  
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/institutions"  element={<Institutions/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/donation" element={<Donation/>} />
-      {/* <Route path="/volunteer" element={<Volunteer/>} /> */}
-    
-      {/* Add other routes as needed */}
     </Routes>
-  
     <Footer/>
   </Router> 
   </>
 );
 export default App;
 
-// ReactDOM.render(<App />, document.getElementById('root'));

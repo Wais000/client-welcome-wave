@@ -61,7 +61,7 @@ export const deleteAccommodation = createAsyncThunk(
   async (id) => {
     try {
       await axios.delete(`http://localhost:5000/api/accommodation/{id}`);
-      return id; // Return the deleted accommodation ID for potential UI updates
+      return id; 
     } catch (error) {
       return handleError(error);
     }
@@ -124,7 +124,7 @@ const accommodationsSlice = createSlice({
       })
       .addCase(updateAccommodation.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        // Update existing accommodation in the state
+
         const index = state.accommodations.findIndex(accommodation => accommodation._id === action.payload._id);
         if (index !== -1) {
           state.accommodations[index] = action.payload;
